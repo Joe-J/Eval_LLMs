@@ -51,11 +51,14 @@ Compare the performances of the following LLMs (including the speed and memory):
 ## Performances
 | Model                                         | HSwag | OBQA | WinoGrande | ARC_c | ARC_e | boolq | piqa | avg   |
 |-----------------------------------------------|-------|------|---------|-------|-------|-------|------|-------|
+| EleutherAI/pythia-1b                | 47.17 | 31.40 | 53.59   | 49.07 | 27.05 | 69.4 |  |  |
+| PY007/TinyLlama-1.1B-Chat-v0.1      | 53.81 | 32.20 | 55.01   | 49.62 | 28.67 | 58.04 | 69.64| 49.57 |
 | state-spaces/mamba-130m                | 35.30 | 28.60 | 52.41   | 42.05 | 24.23 | 55.14 | 63.33| 43.01 |
 | microsoft/phi-2                     | 73.78 | 51.40 | 75.61   | 78.28 | 53.92 | 83.55 | 79.22| 70.82 |
-| EleutherAI/pythia-1b                | 47.17 | 31.40 | 53.59   | 49.07 | 27.05 | 60.80 | 69.42| 48.36 |
-| PY007/TinyLlama-1.1B-Chat-v0.1      | 53.81 | 32.20 | 55.01   | 49.62 | 28.67 | 58.04 | 69.64| 49.57 |
+| Gemma-2b                              | 71.4  | 47.8  | 65.4       | 42.1  | 73.2  | 69.4  | 77.3  | 63.8  |
+| Gemma-7b                              | 81.2  | 52.8  | 72.3       | 53.2  | 81.5  | 83.2  | 81.2  | 72.2  |
 
+> The results of Gemma are from [kaggele report](https://www.kaggle.com/models/google/gemma?postConsentAction=explore)
 
 <!-- mamba (pretrained=state-spaces/mamba-130m), gen_kwargs: (), limit: None, num_fewshot: None, batch_size: 10
 |    Tasks    |Version|Filter|n-shot| Metric |Value |   |Stderr|
